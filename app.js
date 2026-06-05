@@ -11,7 +11,7 @@ const path = require('path')
 dotenv.config();
 
 app.use(cors({
-    origin: env.FRONTEND_URL
+    origin: process.env.FRONTEND_URL
 }));
 
 app.use(
